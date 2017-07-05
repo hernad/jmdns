@@ -11,7 +11,7 @@ public class HelloService {
             try {
                 // Create a JmDNS instance
                 //JmDNS jmdns = JmDNS.create(InetAddress.getLocalHost());
-                JmDNS jmdns = JmDNS.create("127.0.0.1");
+                JmDNS jmdns = JmDNS.create("hAir");
 
                 // Register a service
                 ServiceInfo serviceInfo = ServiceInfo.create("_http._tcp.local.", "service1", 999, "path=index.html;test=004303404034030430");
