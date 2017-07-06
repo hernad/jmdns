@@ -31,7 +31,7 @@ public class HelloListenService {
           JmDNS jmdns = JmDNS.create(InetAddress.getLocalHost());
 
           // Add a service listener
-          jmdns.addServiceListener("_http._tcp.local.", new SampleListener());
+          jmdns.addServiceListener("_psql._tcp.local.", new SampleListener());
 
           // Wait a bit
           Thread.sleep(30000);

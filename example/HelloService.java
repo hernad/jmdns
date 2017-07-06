@@ -14,7 +14,7 @@ public class HelloService {
                 JmDNS jmdns = JmDNS.create("hAir");
 
                 // Register a service
-                ServiceInfo serviceInfo = ServiceInfo.create("_http._tcp.local.", "service1", 999, "path=index.html;test=004303404034030430");
+                ServiceInfo serviceInfo = ServiceInfo.create("_psql._tcp.local.", "service1", 999, "path=index.html;test=004303404034030430");
                 jmdns.registerService(serviceInfo);
 
                 // Wait a bit
